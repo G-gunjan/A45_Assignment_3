@@ -9,10 +9,10 @@ Django Application: A task management system that allows users to create, view, 
 
 Ensure the following are installed on your system:
 
-- [Docker](https://www.docker.com/products/docker-desktop/)
-- [Docker Compose](https://docs.docker.com/compose/)
-- [Git](https://git-scm.com/)
-- [Jenkins](https://www.jenkins.io/)
+* [Docker](https://www.docker.com/products/docker-desktop/)
+* [Docker Compose](https://docs.docker.com/compose/)
+* [Git](https://git-scm.com/)
+* [Jenkins](https://www.jenkins.io/)
 
 ## Project Structure
 
@@ -70,85 +70,85 @@ cd A45_Assignment3
 docker-compose up --build
 ```
 **Access the Applications**
-*Flask App: http://localhost:5000
+* Flask App: http://localhost:5000
 
-*Django App: http://localhost:8000
+* Django App: http://localhost:8000
 
-*Django Admin: http://localhost:8000/admins
+* Django Admin: http://localhost:8000/admins
 **Create a Django Superuser**
 ```
 docker-compose run django_app python manage.py createsuperuser
 ```
 **Links**
-* GitHub Repo: https://github.com/G-gunjan/A45_Assignment_3.git
+*  GitHub Repo: https://github.com/G-gunjan/A45_Assignment_3.git
 
-* Docker Hub - Django App: https://hub.docker.com/repository/docker/gunjanpandya/django_app/general
+*  Docker Hub - Django App: https://hub.docker.com/repository/docker/gunjanpandya/django_app/general
 
-*Docker Hub - Flask App: https://hub.docker.com/repository/docker/gunjanpandya/flask_app/general
+*  Docker Hub - Flask App: https://hub.docker.com/repository/docker/gunjanpandya/flask_app/general
 
 **Features**
  **Flask Application**
-*Homepage with a greeting
+* Homepage with a greeting
 
-*Form to collect user name and age
+* Form to collect user name and age
 
-*Personalized greeting on submission
+* Personalized greeting on submission
 
-*CSRF protection and form validation
+* CSRF protection and form validation
 
 
 **Django Application**
-*Homepage lists all items
+* Homepage lists all items
 
-*Add new items via form
+* Add new items via form
 
-*Delete items
+* Delete items
 
-*Admin interface to manage products
+* Admin interface to manage products
 
-*SQLite for data persistence
+* SQLite for data persistence
 **Docker Configuration**
 The project uses Docker Compose to manage two containers:
 
 **Flask Container**
-*Python 3.10
+* Python 3.10
 
-*Flask + WTForms
+* Flask + WTForms
 
-*Development server on port 5000
+* Development server on port 5000
 
 Django Container
-*Python 3.10
+* Python 3.10
 
-*Django + SQLite
+* Django + SQLite
 
-*Development server on port 8000
+* Development server on port 8000
 
 **Environment Variables**
-*Flask App
-*FLASK_ENV: development
-*FLASK_DEBUG: 1
-*SECRET_KEY: Custom secret key for security
-*PYTHONUNBUFFERED: 1
-*Django App
-*DEBUG: 1
-*PYTHONUNBUFFERED: 1
+* Flask App
+* FLASK_ENV: development
+* FLASK_DEBUG: 1
+* SECRET_KEY: Custom secret key for security
+* PYTHONUNBUFFERED: 1
+* Django App
+* DEBUG: 1
+* PYTHONUNBUFFERED: 1
 **Development**
 To make changes to the application:
 
-*The code is mounted as volumes, so changes will reflect immediately
-*Both applications have debug mode enabled for development
-*Auto-reload is enabled for both services
+* The code is mounted as volumes, so changes will reflect immediately
+* Both applications have debug mode enabled for development
+* Auto-reload is enabled for both services
 **Production Deployment**
 **For production deployment:**
 
-*Change debug settings to False
-*Use proper secret keys
-*Configure proper database settings for Django
-*Use production-grade servers instead of development servers
-*Docker Hub Images
+* Change debug settings to False
+* Use proper secret keys
+* Configure proper database settings for Django
+* Use production-grade servers instead of development servers
+* Docker Hub Images
 **The Docker images are available at:**
 
-*Flask App: https://hub.docker.com/repository/docker/gunjanpandya/flask_app/general
-*Django App: https://hub.docker.com/repository/docker/gunjanpandya/django_app/general
+* Flask App: https://hub.docker.com/repository/docker/gunjanpandya/flask_app/general
+* Django App: https://hub.docker.com/repository/docker/gunjanpandya/django_app/general
 
