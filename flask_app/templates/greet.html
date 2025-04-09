@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Enter your name and age</h2>
+    <form method="post">
+        Name: <input type="text" name="name" required><br><br>
+        Age: <input type="text" name="age" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if error %}
+    <p style="color:red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
